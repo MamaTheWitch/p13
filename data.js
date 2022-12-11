@@ -41,7 +41,7 @@
 'Oskari Ketola #12',
 'Rasmus Känsälä #14',
 'Eetu Laipio #20',
-'Leo Lamminen #',
+'Leo Lamminen #32',
 'Lauri Lampinen #',
 'Nooa Luotio #10',
 'Atte Marola #60',
