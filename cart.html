@@ -101,6 +101,11 @@ function GenerateCartItems(){
 
 GenerateCartItems()
 	
+	let finalCheck = () => {
+		 	localStorage.clear();
+			window.location='kiitos.html'+window.location.search;
+		};
+	
         document.getElementById("Submit").addEventListener("click", function(){
 			for (var i = 0, len = basket.length; i < len; i++) {
 				async function postData(url = 'https://honka-server.hasura.app/v1/graphql', data = basket) {
@@ -114,9 +119,9 @@ GenerateCartItems()
 				console.log(myJason);
 		  		return myJason;
 				}; 
-				postData();
-		 	localStorage.clear();
-			window.location='kiitos.html'+window.location.search;
+				postData().then(finalCheck).catch(()=>{alert("Oops! Try again 🙃");});
+				
+//.finally (run something no matter if then or catch executed)
 			}
 		});          
 
