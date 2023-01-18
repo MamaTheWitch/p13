@@ -119,13 +119,13 @@
             alert("runnind addPrintText IF1");
           return document.getElementsByClassName("addnumber")[i+1].innerText = "Price including print.";}
           else if (shopItems[i].print == null) {
-                        alert("runnind addPrintText IF2");
+                  alert("runnind addPrintText IF2");
           return document.getElementsByClassName("addnumber")[i+1].innerText = "Print is not available.";}
           else {
-                        alert("runnind addPrintText IF3");
+                  alert("runnind addPrintText IF3");
           return document.getElementsByClassName("addnumber")[i+1].innerText = "Add a number? (+"+shopItems[i].print+"€)";}
           };
-          alert("runnind addPrintText");
+
           AddPrintText();
 
           let checkBox = document.getElementsByClassName("PrintCheck")[i+1];
