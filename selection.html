@@ -128,7 +128,7 @@
 
           let checkBox = document.getElementsByClassName("PrintCheck")[i+1];
          
-          function AddPrintPrice(i) {
+          function AddPrintPrice(i,checkBox) {
           if (checkBox.checked == true) {
           return document.getElementsByClassName("price")[i+1].innerText = (shopItems[i].price + shopItems[i].print).toFixed(2) + " eur";}
           else {
@@ -136,7 +136,7 @@
           };
 
           clone.getElementsByClassName("PrintCheck")[0].addEventListener("click", function(){
-          AddPrintPrice(i) });
+          AddPrintPrice(i,checkBox) });
 
           
           clone.getElementsByClassName("add-to-cart-button")[0].addEventListener("click", function(){
