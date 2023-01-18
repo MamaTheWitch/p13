@@ -162,8 +162,8 @@
                 item: shopItems[i].text,
                 size: sizeSelection2,
                 print: checkBox.checked,
-                price: AddPrintPrice(),
-                price2: parseFloat(AddPrintPrice()),
+                price: AddPrintPrice(i,checkBox),
+                price2: parseFloat(AddPrintPrice(i,checkBox)),
                            });
             
             console.log(basket);
