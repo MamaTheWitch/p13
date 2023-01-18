@@ -114,25 +114,21 @@
           
           document.body.append(clone);
 
-          function AddPrintText() {
-                        alert("running!");
+          function AddPrintText(i) {
 
           if (shopItems[i].print == 0) {
-            alert("runnind addPrintText IF1");
           return document.getElementsByClassName("addnumber")[i+1].innerText = "Price including print.";}
           else if (shopItems[i].print == null) {
-                  alert("runnind addPrintText IF2");
           return document.getElementsByClassName("addnumber")[i+1].innerText = "Print is not available.";}
           else {
-                  alert("runnind addPrintText IF3");
           return document.getElementsByClassName("addnumber")[i+1].innerText = "Add a number? (+"+shopItems[i].print+"€)";}
           };
 
-          AddPrintText();
+          AddPrintText(i);
 
           let checkBox = document.getElementsByClassName("PrintCheck")[i+1];
          
-          function AddPrintPrice() {
+          function AddPrintPrice(i) {
           if (checkBox.checked == true) {
           return document.getElementsByClassName("price")[i+1].innerText = (shopItems[i].price + shopItems[i].print).toFixed(2) + " eur";}
           else {
@@ -140,7 +136,7 @@
           };
 
           clone.getElementsByClassName("PrintCheck")[0].addEventListener("click", function(){
-          AddPrintPrice() });
+          AddPrintPrice(i) });
 
           
           clone.getElementsByClassName("add-to-cart-button")[0].addEventListener("click", function(){
