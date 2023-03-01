@@ -42,7 +42,7 @@
 'Rasmus Känsälä #14',
 'Eetu Laipio #20',
 'Leo Lamminen #32',
-'Lauri Lampinen #',
+'Lauri Lampinen #10',
 'Nooa Luotio #10',
 'Atte Marola #60',
 'Eetu Martikainen #13',
